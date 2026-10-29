@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote media review</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Remote media review</h1>
+    <p>Review locally. Nothing on the server is moved or deleted.</p>
+    <div class="filters">
+      <label>Category
+        <select id="category">
+          <option value="">All categories</option>
+          <option value="name_absent">Name absent locally</option>
+          <option value="same_name_different_size">Same name / different size</option>
+        </select>
+      </label>
+      <label>Decision
+        <select id="status">
+          <option value="">All decisions</option>
+          <option value="unreviewed">Unreviewed</option>
+          <option value="keep">Keep</option>
+          <option value="delete">Marked for deletion</option>
+        </select>
+      </label>
+      <label>Media
+        <select id="kind">
+          <option value="">Images and videos</option>
+          <option value="image">Images</option>
+          <option value="video">Videos</option>
+        </select>
+      </label>
+      <label>Search path <input id="search" type="search" placeholder="Folder or filename"></label>
+      <a id="export" href="manifest" download="deletion-manifest.json">Export deletion manifest</a>
+    </div>
+    <p id="summary" aria-live="polite">Loading review...</p>
+    <p class="hint">Open a file, then use &larr; / &rarr; to navigate, K to keep, D to mark, U to reset, Esc to close.</p>
+    <p id="error" role="alert"></p>
+  </header>
+  <main>
+    <div id="grid"></div>
+    <button id="more" hidden>Show more</button>
+  </main>
+  <dialog id="viewer">
+    <div class="viewer-toolbar">
+      <button id="previous" aria-label="Previous file">&larr; Previous</button>
+      <button id="next" aria-label="Next file">Next &rarr;</button>
+      <button id="close">Close (Esc)</button>
+    </div>
+    <h2 id="viewer-name"></h2>
+    <p id="viewer-info"></p>
+    <div id="preview"></div>
+    <p id="viewer-error" role="alert"></p>
+    <div id="viewer-actions" class="actions"></div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "host": "files.example.com",
+  "port": 22,
+  "username": "alice",
+  "remote_path": "/srv/files",
+  "local_path": "/Users/alice/Downloads/files",
+  "output": "missing-files.txt",
+  "filename_only": false,
+  "timeout": 30,
+  "debug_ssh": false
+}

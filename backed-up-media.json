@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "action": "verified_local_backup",
+  "requires_remote_revalidation": true,
+  "generated_at": "2026-10-29T20:51:50.386495+00:00",
+  "count": 0,
+  "total_bytes": 0,
+  "files": []
+}

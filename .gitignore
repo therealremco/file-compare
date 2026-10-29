@@ -1,0 +1,8 @@
+PROMPT.md
+.venv/
+__pycache__/
+config.json
+missing-files.txt
+ssh-progress.log
+.review/
+cleanup-audit-*.jsonl

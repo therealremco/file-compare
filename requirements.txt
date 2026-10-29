@@ -1,0 +1,2 @@
+paramiko>=3.4,<5
+Pillow>=11,<13
