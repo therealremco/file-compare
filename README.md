@@ -16,7 +16,7 @@ A set of Python 3.10+ command-line tools for managing copies of files on differe
 
 ## Starting With the Why
 
-I created this tool because I have been generatng images and videos with ComfyUI, the desktop app on my laptop and Comfy running as a server on my NVIDIA GB10 workstation. On my laptop I organise images and videos as projects, Comfy also stores all generated output in `/output`. Instea of just deleting everything there, I wanted to check if I had forgotten to download anything that I wanted to keep on my laptop (with cloud/NAS backup). Maybe it's overkill, but hopefully it will come in handy now and then and perhaps there are other uses I haven't thought of yet. Of course if you do find an orphaned file, don't forget to copy it from the server before deleting anything!
+I created this tool because I have been generatng images and videos with ComfyUI and ended up with a lot of files both on my laptop and on my NVIDIA GB10 workstation. On my laptop I organise images and videos as projects, Comfy also stores all generated output in `/output`. Instead of just deleting everything from the server, I wanted to check if I had forgotten to download anything that I wanted to keep on my laptop (with cloud/NAS backup). Maybe it's overkill, but hopefully it will come in handy now and then and perhaps there are other uses I haven't thought of yet. Of course if you do find an orphaned file on your server, don't forget to copy it before deleting anything!
 
 ## Setup
 
